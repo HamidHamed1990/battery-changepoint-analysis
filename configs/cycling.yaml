@@ -1,12 +1,12 @@
 # Cycling protocol configuration
 dataset_name: cycling
 
-input_excel: G:/My Drive/My data/important battery documents/Papers/My_Draft/Aachen_Aging_data/processed_mat_data_cycling/Processed_Charge_All_Cycles.xlsx
-output_csv: battery_changepoints_cycling_penalty5.csv
+input_excel: /Processed_Charge_All_Cycles.xlsx
+output_csv: battery_changepoints_cycling_penalty10.csv
 
 changepoint:
   model: rbf
-  penalty: 5
+  penalty: 10
   jump: 1
 
 soh:
