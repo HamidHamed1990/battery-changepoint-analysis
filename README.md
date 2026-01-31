@@ -1,18 +1,17 @@
 # Battery Change Point Analysis
 
-This repository provides a unified pipeline for detecting
-change points in lithium-ion battery voltage, incremental
-capacity (dQ/dV), and differential voltage (dV/dQ) curves
-using the PELT algorithm from the `ruptures` library.
+Unified pipeline for detecting change points in lithium-ion battery
+voltage, incremental capacity (dQ/dV), and differential voltage (dV/dQ)
+profiles using the PELT algorithm.
 
 ## Features
-- Cycle-wise change point detection
-- Support for cycling and OCV datasets
-- Configurable penalty and jump parameters
-- SOH computation (cycle-2 reference or nominal capacity)
+- Cycling and OCV datasets supported via configuration files
+- SOH calculation (cycle-2 reference or nominal capacity)
 - Optional clustering-based relabeling
-- Publication-ready visualization
+- Publication-quality visualization
 
 ## Usage
+
 ```bash
-python scripts/run_analysis.py --config configs/cycling.yaml
+cp configs/cycling.yaml config.yaml
+python scripts/run_analysis.py
