@@ -1,7 +1,7 @@
 # OCV-SOC configuration
 dataset_name: ocv
 
-input_excel: G:/My Drive/My data/important battery documents/Papers/My_Draft/Aachen_Aging_data/Change_Points/battery_data_summary_OCV.xlsx
+input_excel: /battery_data_summary_OCV.xlsx
 output_csv: battery_changepoints_ocv_penalty50.csv
 
 changepoint:
